@@ -47,18 +47,26 @@ public class Csiga {
     public String getMegtettUtPluszCsiga(){  
         String szoveg = "";
         if(this.szin.equals("kek")){
-            szoveg = this.megtettUt + "\u001B[34mSIGA\u001B[0m";
+            szoveg = this.megtettUt + "\u001B[34m🐌\u001B[0m";
         }
         if(this.szin.equals("piros")){
-            szoveg = this.megtettUt + "\u001B[31mSIGA\u001B[0m";
+            szoveg = this.megtettUt + "\u001B[31m🐌\u001B[0m";
         }
         if(this.szin.equals("zold")){
-            szoveg = this.megtettUt + "\u001B[32mSIGA\u001B[0m";
+            szoveg = this.megtettUt + "\u001B[32m🐌\u001B[0m";
         }
         if(this.fogadva){
-            return szoveg + " zaszlo";
+            return szoveg + "🏳";
         }else{
             return szoveg;
         }
+    }
+    
+    public String getmegtettUt(){
+        return this.megtettUt;
+    }
+    
+    public String getSzin(){
+        return this.szin;
     }
 }
